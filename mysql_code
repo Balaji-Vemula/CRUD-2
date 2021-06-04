@@ -1,0 +1,15 @@
+create database useradmin;
+
+use useradmin;
+
+CREATE TABLE user(
+	user_id INTEGER not null auto_increment,
+    username VARCHAR(255) not null,
+    first_name VARCHAR(255) not null,
+    last_name VARCHAR(255) not null,
+    pn char(10) not null,
+    gender varchar(10) not null,
+    email VARCHAR(255) not null,
+    pwd VARCHAR(255) not null,
+    PRIMARY KEY(user_id)
+)
